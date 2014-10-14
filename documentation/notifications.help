@@ -1,0 +1,14 @@
+<script type="text/javascript">document.write("<p class='notification positive'>Javascript ist working as expected.</p>")</script>
+
+<p class='notification'>
+	<span class="icon attention float-left"></span>
+	This is a neutral notification.
+</p>
+<p class='notification positive'>
+	<span class="icon success float-left"></span>
+	This is a positive neutral notification.
+</p>
+<p class='notification negative'>
+	<span class="icon failure float-left"></span>
+	This is a negative notification.
+</p>
