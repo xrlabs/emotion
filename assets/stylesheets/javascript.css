@@ -2,7 +2,8 @@ body {
 
 	font-family: "Bitter", sans-serif;
 
-	color: #333;
+	color: #777;
+	background-color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,16 @@ h1 {
 	font-size: 3em;
 }
 
+a {
+
+	color: #ccc;
+}
+
+a:hover {
+
+	color: white;
+}
+
 .notification {
 	
 	font-size: 1.2em;
@@ -27,6 +38,8 @@ h1 {
 
 	color: #002157;
 	background-color: #6ECFF6;
+
+	border-radius: 0.2em;
 }
 
 .notification.positive {
@@ -43,12 +56,32 @@ h1 {
 
 input { 
 
-	font-family: "Ruboto", sans-serif;
+	font-family: "Ubuntu", sans-serif;
 }
 
 button {
 
-	font-family: "Ruboto", sans-serif;
+	font-family: "Ubuntu", sans-serif;
+}
+
+input {
+
+	transition: background 0.2s;
+
+	padding: 0.5em;
+
+	border-radius: 8px;
+	color: #333;
+	border: 1px solid #333;
+	border-bottom: 3px solid #333;
+}
+
+input:hover {
+
+	color: #fff;
+	background: #7CA67C;
+	border-bottom: 3px solid #16402E;
+
 }
 
 .icon {
@@ -71,24 +104,49 @@ button {
 	float: right;
 }
 
-.icon.information {
-	background: url('../icons/glyphicons_195_circle_info.png')
+.vertical-list {
+
+	list-style-type: none;
+	padding-left: 0;
 }
 
-.icon.attention {
-	background: url('../icons/glyphicons_196_circle_exclamation_mark.png');
+.vertical-list ul {
+
+	width: 20em;
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0.5em;
+
+	padding: 1em;
+
+	border: 1px solid #ccc;
 }
 
-.icon.success {
-	background: url('../icons/glyphicons_193_circle_ok.png');
-}
+.vertical-list ul li {
 
-.icon.failure {
-	background: url('../icons/glyphicons_192_circle_remove.png');
+	display: block;
+	margin-bottom: 0.5em;
 }
 
 #content {
 
 	width: 80%;
+	padding: 2em;
 	margin: 0 auto;
+
+	color: #403940;
+	background-color: #eee;
+}
+
+#footer {
+
+	width: 80%;
+	margin: 0 auto;
+	padding: 0.2em 2em;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#footer span#social {
+	display: inline-block;
+	background-color: crimson;
 }
